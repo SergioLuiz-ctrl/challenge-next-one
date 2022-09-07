@@ -1,0 +1,178 @@
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+
+body {
+    background-color: #2c2b2b;
+}
+
+
+main {
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+
+.input-texto {
+    margin-top: 90px;
+    border-radius: 10px;
+}
+
+textarea {
+    resize: none;
+}
+
+.mensagem {
+    position: fixed;
+    margin-top: 20px;
+    margin-left: 90px;
+    background-repeat: no-repeat;
+    background-position: 18px;
+    background-size: 300px;
+    border-radius: 10px;
+
+}
+
+.copiar {
+    position: relative;
+    margin-top: 330px;
+    margin-left: 205px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+
+
+.encriptar {
+    background-color: darkblue;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.desencriptar {
+    margin-left: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.botao-interativo:hover {
+    transform: scale(1.2);
+}
+
+.informacao {
+    font-size: 15px;
+    color: #f0f8ff;
+}
+
+/*  Responsividade */
+
+@media screen and (max-width: 480px) {
+    * {
+        font-weight: 100px;
+        font-size: 20px;
+        line-height: 150%;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    main {
+        display: flex;
+        margin-left: 10px;
+        margin-bottom: 20px 10px;
+        flex-direction: column;
+        align-content: stretch;
+        justify-content: space-evenly;
+    }
+
+    .input-texto {
+        margin: 10px 0 0;
+        border-radius: 10px;
+    }
+
+    textarea {
+        resize: none;
+        width: 95%;
+    }
+
+    .mensagem {
+        position: relative;
+        margin-left: 20px 0 13px;
+        background-repeat: no-repeat;
+        background-position: 18px;
+        background-size: 300px;
+        border-radius: 10px;
+
+    }
+
+    .botoes {
+        display: flex;
+        margin: 2px 0 0;
+        flex-direction: column;
+    }
+
+    .encriptar {
+        width: 70%;
+        padding: 5px 0;
+        margin: 20px 0 0 50px;
+        border-radius: 10px;
+        transform: scale(1.2);
+    }
+
+    .desencriptar {
+        width: 70%;
+        padding: 5px 0;
+        margin: 20px 0 0 50px;
+        border-radius: 10px;
+        transform: scale(1.2);
+    }
+
+    .mensagem {
+        position: relative;
+        margin-top: 20px;
+        margin: 30px 0 20px;
+        background-repeat: no-repeat;
+        background-position: 18px;
+        background-size: 300px;
+        border-radius: 10px;
+    }
+
+    .copiar {
+        width: 30%;
+        position: relative;
+        margin: 10px 116px 50px;
+        border-radius: 10px;
+        transform: scale(1.2);
+        padding: 5px 0;
+       
+    }
+
+    .div-aparece {
+        width: auto;
+        margin: 30px;
+    }
+
+    .informacao {
+        font-size: 19px;
+        text-align: center;
+        margin: 0 0 20px;
+
+    }
+
+}
